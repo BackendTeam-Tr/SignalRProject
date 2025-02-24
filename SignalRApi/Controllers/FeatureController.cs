@@ -51,7 +51,7 @@ namespace SignalRApi.Controllers
             return Ok("Öne Çıkan Bilgisi Silindi.");
         }
         [HttpGet("GetFeature")]
-        public IActionResult GetCategory(int id)
+        public IActionResult GetFeature(int id)
         {
             var value = _featureService.TGetById(id);
             return Ok(value);
